@@ -1,6 +1,6 @@
 # Generating synthetic CT scans from MRIs to enhance radiotherapy tretement planning
-<p align="right">
-<img src="pictures/Real MRI.png">
+<p align="center">
+<img src="pictures/167919_web.jpg">
 </p>
 
 ## About me
