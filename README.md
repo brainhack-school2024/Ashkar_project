@@ -5,13 +5,13 @@
 # Generating synthetic CT scans from MRIs to enhance radiotherapy treatment planning
 
 ## About me
-I am a gradute student at Polytechnique Montreal, finishing my Masters in Biomedical Engineering, Instrumentation and Medical Imaging. I come from a background of a Bachelor in Pure Physics and a Masters in Medical Physics-Safety and Security.  
+I am a gradute student at Polytechnique Montreal, finishing my Masters in Biomedical Engineering, Instrumentation and Medical Imaging. I come from a background of a Bachelor in Pure Physics and a Masters in Medical Physics-Safety and Security. I am interested in finiding new imaging techniques coupled to AI and hyperspectral retinal imaging and i believe that BHS will help me get a step closer to achieving a personal project adn get familiar with Machine Learning and Data analysis.
+
 <a href="https://github.com/KhaledAshkar">
    <img src="https://avatars.githubusercontent.com/u/122472459?v=4?s=100" width="100px;" alt=""/>
    <br /><sub><b>Khaled Ashkar</b></sub>
 </a>
 
-nanana
 ## Project summary
 This project aims to develop a deep learning model that generates reliable synthetic CT scans from MRIs only, Contrast and Field magnitude-agnostic to eliminate the need for additional CT scans in hospitals and clinics.
 #### Keywords
@@ -23,7 +23,7 @@ Over the past decades, medical imaging has significantly enhanced the diagnosis 
 ### Main Objectives
 - On the personal level:get a basic knowledge in Opensource Data, DataSet manipulation, Machine Learning, DeepLearning models and Data visualization.
 - Short term: Provide a pipeline to generate synthetic CTs from MRIs  (training/testing).
-- Long term: Generating the model on different Contrasts and Field magnitudes.
+- Long term: Generalizing the model on different Contrasts and Field magnitudes.
 
 ### Tools
 This project relied on numerous tools such as:
@@ -98,13 +98,13 @@ The code used to preprocess the images can be found at: https://github.com/Synth
 - Github reposiory with all the data needed to train the model, describing the project and explaining the results;
 - Two Pre-trained models on 3 and 7 Brain images;
 - The Wrap-up presentation done at the end of the Brainhack school (14-06-2024);
-- Two versions of the model 'GAN_MRI_to_CT_Visualstudio' and ' ' (ready to be ran on Google Colab for faster computing and locally using a CPU only).
+- Two versions of the model 'GAN_MRI_to_CT_Visualstudio' and 'GAN_MRI_to_CT_Colab' (ready to be ran on Google Colab for faster computing and locally using a CPU only).
 
 ## Results
 
 ### Preprocessing 
-The MRI data used to train the model had different sizes, meanwhile the model takes (128x128) arrays. The first step was to padd all the images with 50 to 100 pixels ( MRI,CT and the mask) to ensure a (256x256) sized array. Next, I resized the images to (128x128) to match the conditions. I could have trained the model on higher resolution but I decided to go with less due to the computational resources and do to have a model capable of delivering good results in case of degraded images.
-Using "ITK-SNAP", I made sure that the images and the mask are aligned, which saved a lot of work. The mask covered all the needed area in all the images so no additional segmentation was done.
+The MRI data used to train the model had different sizes, meanwhile the model takes (128x128) arrays. The first step was to padd all the images with 50 to 100 pixels ( MRI,CT and the mask) to ensure a (256x256) sized array. Next, I resized the images to (128x128) to match the conditions. I could have trained the model on higher resolution but I decided to go with less due to the computational resources and to have a model capable of delivering good results in case of degraded images.
+Using "ITK-SNAP", I made sure that the images and the mask are aligned, which saved a lot of work. The mask covered the Brain area in all the images so no additional segmentation was needed.
 
 ### Model Testing and Validation
 After trying more than 22 combinations of subjects number, epochs number and batch size, I decided to compare 3 models:
@@ -117,6 +117,10 @@ Also, the evaluation between the original CT scan and the generated one was base
 - Peak signal to noise ratio (PSNR)
 - Structrual similarity index (SSIM)
 
+1- convergence
+2- data validation
+3- testing
+4- using the second model
 
 caption before
 space before 
