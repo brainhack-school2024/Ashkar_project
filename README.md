@@ -8,7 +8,7 @@ title: "Generating synthetic CT scans from MRIs to enhance radiotherapy tretemen
 names: [Khaled Ashkar]
 
 # Your project GitHub repository URL
- github_repo:git@github.com:brainhack-school2024/Ashkar1_project.git
+ github_repo: git@github.com:brainhack-school2024/Ashkar1_project.git
 
 # If you are working on a project that has website, indicate the full url including "https://" below or leave it empty.
 website:
