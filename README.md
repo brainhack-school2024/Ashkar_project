@@ -1,4 +1,3 @@
----
 type: "project" # DON'T TOUCH THIS ! :)
 date: "2024-06-17" # Date you first upload your project.
 # Title of your project (we like creative title)
