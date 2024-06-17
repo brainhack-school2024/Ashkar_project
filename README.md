@@ -1,28 +1,16 @@
-type: "project" # DON'T TOUCH THIS ! :)
-date: "2024-06-17" # Date you first upload your project.
-# Title of your project (we like creative title)
-title: "Generating synthetic CT scans from MRIs to enhance radiotherapy tretement planning"
 
-# List the names of the collaborators within the [ ]. If alone, simple put your name within []
-names: [Khaled Ashkar]
+# Generating synthetic CT scans from MRIs to enhance radiotherapy tretement planning
 
-# Your project GitHub repository URL
- github_repo: git@github.com:brainhack-school2024/Ashkar1_project.git
+### [Khaled Ashkar]
 
-# If you are working on a project that has website, indicate the full url including "https://" below or leave it empty.
-website:
+## Github_repo: git@github.com:brainhack-school2024/Ashkar1_project.git
 
-# List +- 4 keywords that best describe your project within []. Note that the project summary also involves a number of key words. Those are listed on top of the [github repository](github_repo:git@github.com:brainhack-school2024/Ashkar1_project.git), click `manage topics`.
-# Please only lowercase letters
-tags: [mri, ct, cbct, radiotherapy, treatement planning]
+### [mri, ct, cbct, radiotherapy, treatement planning]
 
-# Summarize your project in < ~75 words. This description will appear at the top of your page and on the list page with other projects..
+# Summary:
+This project aims to develop a deep learning model that generates reliable synthetic CT scans from MRIs only, Contrast and Field magnitude-agnostic to eliminate the need for additional CT scans in hospitals and clinics.
 
-summary:"This project aims to develop a deep learning model that generates reliable synthetic CT scans from MRIs only, Contrast and Field magnitude-agnostic to eliminate the need for additional CT scans in hospitals and clinics."
 
-# If you want to add a cover image (listpage and image in the right), add it to your directory and indicate the name
-# below with the extension.
-image: ""
 ---
 
 ## Project definition
