@@ -1,10 +1,11 @@
-# Generating synthetic CT scans from MRIs to enhance radiotherapy tretement planning
 <p align="center">
 <img src="pictures/167919_web.jpg">
 </p>
 
-## About me
+# Generating synthetic CT scans from MRIs to enhance radiotherapy treatment planning
 
+## About me
+I am a gradute student at Polytechnique Montreal, finishing my Masters in Biomedical Engineering, Instrumentation and Medical Imaging. I come from a background of a Bachelor in Pure Physics and a Masters in Medical Physics-Safety and Security.  
 <a href="https://github.com/KhaledAshkar">
    <img src="https://avatars.githubusercontent.com/u/122472459?v=4?s=100" width="100px;" alt=""/>
    <br /><sub><b>Khaled Ashkar</b></sub>
@@ -20,13 +21,17 @@ This project aims to develop a deep learning model that generates reliable synth
 Over the past decades, medical imaging has significantly enhanced the diagnosis and treatment of oncological patients, particularly in radiotherapy (RT). Traditionally, 3D computed tomography (CT) is the primary imaging modality used in RT for accurate patient geometry, dose calculations, and plan optimization. However, CT exposes patients to ionizing radiation, which is a concern, especially for repeated simulations or vulnerable populations such as pediatric patients. Magnetic resonance imaging (MRI), with its superior soft-tissue contrast, has proven valuable for tumor and organ-at-risk delineation, patient positioning, and monitoring. Despite its advantages, MRI lacks the necessary tissue attenuation information required for accurate dose calculations, making CT still necessary in RT workflows. To overcome these challenges, recent advancements have focused on generating synthetic CT (sCT) images from MRIs. This approach aims to combine the superior imaging capabilities of MRI with the essential dose calculation information of CT, reducing the patient's exposure to radiation and simplifying the workflow. Artificial intelligence (AI) techniques, particularly machine learning and deep learning, have emerged as leading methods for creating sCT images from MRI data. These AI-driven methods have the potential to enhance the accuracy of RT planning and delivery. However, the field still faces the challenge of a lack of public datasets and standardized benchmarks to validate and compare different AI approaches. This project aims to develop and refine AI algorithms to generate high-quality CT scans from MRIs, thereby improving RT workflows and patient outcomes by leveraging the best features of both imaging modalities.
 
 ### Main Objectives
-
-### Personal Objectives
+- On the personal level:get a basic knowledge in Opensource Data, DataSet manipulation, Machine Learning, DeepLearning models and Data visualization.
+- Short term: Provide a pipeline to generate synthetic CTs from MRIs  (training/testing).
+- Long term: Generating the model on different Contrasts and Field magnitudes.
 
 ### Tools
 This project relied on numerous tools such as:
 
 - Git and GitHub;
+- Bash terminal
+- Machine Learning
+- Opensource websites: Zenodo and Kaggle;
 - High performance computing (HPC), such as Google Colab, for training the model;
 - Python packages, such as matplotlib, pandas and torch.
 
@@ -93,7 +98,7 @@ The code used to preprocess the images can be found at: https://github.com/Synth
 - Github reposiory with all the data needed to train the model, describing the project and explaining the results;
 - Two Pre-trained models on 3 and 7 Brain images;
 - The Wrap-up presentation done at the end of the Brainhack school (14-06-2024);
-- Two versions of the model (ready to be ran on Google Colab for faster computing and locally using a CPU only).
+- Two versions of the model 'GAN_MRI_to_CT_Visualstudio' and ' ' (ready to be ran on Google Colab for faster computing and locally using a CPU only).
 
 ## Results
 
