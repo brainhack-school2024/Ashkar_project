@@ -117,26 +117,38 @@ Also, the evaluation between the original CT scan and the generated one was base
 - Peak signal to noise ratio (PSNR)
 - Structrual similarity index (SSIM)
 
-1- convergence
-2- data validation
-3- testing
-4- using the second model
-
-caption before
-space before 
 <p align="center">
-<img src="docs/atlas.png">
+<img src="pictures/convergence plots.png">
 </p>
- and after
- 
- ## Conclusions and acknowledgement
+Figure1.: Evaluation metrics and Convergence plots for each model
+
+ <p align="center">
+<img src="pictures/Model validation.png">
+</p>
+Figure2.: Model validation on the 20% of the training dataset showing fair results considering the hyperparameters
+
+<p align="center">
+<img src="pictures/Model testing.png">
+</p>
+Figure3.: Comparing the real CT with the synthetic CT, and the original MRI with the generated MRI from the synthetic CT using the model in the link: (https://surfer.nmr.mgh.harvard.edu/fswiki/SynthSR)
+
+<p align="center">
+<img src="pictures/Histogram comparison.png">
+</p>
+Figure4.: Real CT vs Synthetic CT's Histogram after normalization
+
+ ## Conclusion
 
  ### Can we generate reliable synthetic CT scans from MRIs?
- text
-
- ### Objectives, Tools and Delivrables
-text
-
-## Guide to reproducibility
-
+ While in this instance, the model was unable to generate reliable Synthetic CT scans from the available MRI dataset due to various factors such as the selection of the hyperparameters, the size of the data, the choice of the model, the resolution of the input data and the architecture of the loss function. All of those should be considered when implementing such model to assure a good result from which we can start the next step of this project by extracting the Hounsfield number from those geenrated CT scans in order to start the treatment planning and the dose calculation. I believe that the major limit that all the researchers have found is getting the quantitative relation betwwen the MRI and the CT scans to fairly evaluate the success and the reliability of the results.
+ 
+ ## Acknowledgement
+ I would like to thank the Brainhack team of 2024 for their constructive insights throughout the course, with particular thanks to Dr. Eva Alonso Ortiz, the TAs Daniel Ridani and Jan Valosek, and my colleague Nilser Laines Medina for providing their support and expertise throughout the project.
+ 
 ## References
+- Gupta, D., Kim, M., Vineberg, K. A., & Balter, J. M. (2019). Generation of synthetic CT images from MRI for treatment planning and patient positioning using a 3-Channel U-Net trained on sagittal images. Frontiers in Oncology, 9. https://doi.org/10.3389/fonc.2019.00964
+- Liu, Y., Lei, Y., Wang, Y., Shafai-Erfani, G., Wang, T., Tian, S., Patel, P., Jani, A. B., McDonald, M., Curran, W. J., Liu, T., Zhou, J., & Yang, X. (2019). Evaluation of a deep learning-based pelvic synthetic CT generation technique for MRI-based prostate proton treatment planning. Physics in Medicine & Biology/Physics in Medicine and Biology, 64(20), 205022. https://doi.org/10.1088/1361-6560/ab41af
+- Tahri, S., Texier, B., Nunes, J., Hemon, C., Lekieffre, P., Collot, E., Chourak, H., Guevelou, J. L., Greer, P., Dowling, J., Acosta, O., Bessieres, I., Marage, L., Boue-Rafle, A., De Crevoisier, R., Lafond, C., & Barateau, A. (2023). A deep learning model to generate synthetic CT for prostate MR-only radiotherapy dose planning: a multicenter study. Frontiers in Oncology, 13. https://doi.org/10.3389/fonc.2023.1279750
+- SynthRAD2023 - Grand Challenge. (n.d.). grand-challenge.org. https://synthrad2023.grand-challenge.org/
+- Deep learning based synthetic‐CT generation in radiotherapy and PET: A review
+- Deep learning to generate synthetic CT Images from MR for Radiotherapy treatment planning – MVision AI
