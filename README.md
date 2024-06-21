@@ -98,7 +98,7 @@ The code used to preprocess the images can be found at: https://github.com/Synth
 - Github reposiory with all the data needed to train the model, describing the project and explaining the results;
 - Two Pre-trained models on 3 and 7 Brain images;
 - The Wrap-up presentation done at the end of the Brainhack school (14-06-2024);
-- Two versions of the model 'GAN_MRI_to_CT_Visualstudio' and 'GAN_MRI_to_CT_Colab' (ready to be ran on Google Colab for faster computing and locally using a CPU only).
+- Two versions of the model 'GAN_MRI_to_CT_Visualstudio' and 'GAN_MRI_to_CT_Colab' (ready to be ran on Google Colab for faster computing and locally using a CPU only). Those two files couldn't be uploaded due to their size, they will be sent on demand. Contact me at: Khaled.ashkar@polymtl.ca
 
 ## Results
 
